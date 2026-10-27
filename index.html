@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Contador ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Partículas de coração flutuando no fundo -->
+    <canvas id="canvas-particulas"></canvas>
+
+    <!-- ========== TELA INICIAL ========== -->
+    <section id="tela-inicial">
+        <div class="inicial-card">
+            <div class="emoji-coracao">❤️</div>
+            <h1 class="titulo-principal">Olá, meu amor</h1>
+            <p class="subtitulo">Só uma lembrancinha especial pra você&hellip;</p>
+            <button id="btn-entrar">
+                <span>Entrar</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ========== TELA DE CONTEÚDO ========== -->
+    <section id="tela-conteudo" class="escondido">
+
+        <header class="cabecalho-conteudo">
+            <h1>Nossa História ❤️</h1>
+            <p class="credito">Feito com amor por João Pedro</p>
+        </header>
+
+        <!-- Galeria de fotos -->
+        <div class="galeria">
+            <div class="foto-card">
+                <img src="images/Foto_2.jpg" alt="Fotinho nossa 1">
+            </div>
+            <div class="foto-card">
+                <img src="images/fototeste1.jpg" alt="Fotinho nossa 2">
+            </div>
+            <div class="foto-card">
+                <img src="images/fototeste2.jpg" alt="Fotinho nossa 3">
+            </div>
+            <div class="foto-card">
+                <img src="images/foto_1.jpg" alt="Fotinho nossa 4">
+            </div>
+        </div>
+
+        <!-- Título do contador -->
+        <div class="secao-contador">
+            <p class="label-contador">Juntos há&hellip;</p>
+            <div id="contador">
+                <div class="bloco-tempo" id="bloco-anos">
+                    <span class="numero" id="num-anos">0</span>
+                    <span class="unidade">Anos</span>
+                </div>
+                <div class="separador">·</div>
+                <div class="bloco-tempo" id="bloco-meses">
+                    <span class="numero" id="num-meses">0</span>
+                    <span class="unidade">Meses</span>
+                </div>
+                <div class="separador">·</div>
+                <div class="bloco-tempo" id="bloco-dias">
+                    <span class="numero" id="num-dias">0</span>
+                    <span class="unidade">Dias</span>
+                </div>
+                <div class="separador">·</div>
+                <div class="bloco-tempo" id="bloco-horas">
+                    <span class="numero" id="num-horas">0</span>
+                    <span class="unidade">Horas</span>
+                </div>
+                <div class="separador">·</div>
+                <div class="bloco-tempo" id="bloco-minutos">
+                    <span class="numero" id="num-minutos">0</span>
+                    <span class="unidade">Minutos</span>
+                </div>
+                <div class="separador">·</div>
+                <div class="bloco-tempo" id="bloco-segundos">
+                    <span class="numero" id="num-segundos">0</span>
+                    <span class="unidade">Segundos</span>
+                </div>
+            </div>
+            <p class="frase-amor">Cada segundo ao seu lado é um presente ❤️</p>
+        </div>
+
+        <button id="btn-voltar">← Voltar ao Início</button>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
